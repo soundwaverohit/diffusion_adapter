@@ -1,0 +1,16 @@
+critic:
+  # Hidden dimension of the diffusion critic MLP
+  hidden_dim: 1024
+
+mcts:
+  # Number of top-K token candidates to consider per expansion
+  K: 10
+  # Number of MCTS simulations (tree rollouts) per token
+  num_simulations: 20
+  # UCB exploration constant
+  ucb_c: 1.4
+  # Standard deviation of Gaussian noise added to logits before scoring
+  noise_level: 0.1
+
+# Optional log file path (set to null to disable file logging)
+log_file: null
